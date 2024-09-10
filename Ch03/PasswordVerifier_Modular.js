@@ -59,7 +59,7 @@ const SUNDAY = 0, MONDAY = 1, TUESDAY = 2, WEDNESDAY = 3, THURSDAY = 4, FRIDAY =
 
 module.exports =
 {
-    PasswordVerifierModular: PasswordVerifier_Modular,
+    PasswordVerifier_Modular,
     SUNDAY,
     MONDAY,
     TUESDAY,

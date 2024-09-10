@@ -1,5 +1,5 @@
 //const PasswordVerifier_Modular = require('../PasswordVerifier');
-const { PasswordVerifierModular, SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY } = require('../PasswordVerifier_Modular');
+const { PasswordVerifier_Modular, SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY } = require('../PasswordVerifier_Modular');
 
 // A helper function for injecting a date dependency into the SUT (system under test).
 const injectDate = (verifier, newDay) =>
@@ -130,7 +130,7 @@ describe('PasswordVerifier_Modular', () =>
 
 
 
-    const makeVerifier = () => new PasswordVerifierModular();
+    const makeVerifier = () => new PasswordVerifier_Modular();
     const passingRule = (input) => ({ passed: true, reason: '' });
 
     const makeVerifierWithPassingRule = () =>
